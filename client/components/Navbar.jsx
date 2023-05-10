@@ -19,7 +19,7 @@ const Navbar = () => (
           alt="logo"
           className="w-[24px] h-[24px] object-contain"
         />
-      <Link href="/landing">
+      <Link href="/">
         <h2 className="font-bold text-[24px] leading-[30px] text-white">
           ÖTZZI
         </h2>
