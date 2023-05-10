@@ -1,4 +1,3 @@
-'use client';
 
 import { motion } from 'framer-motion';
 
@@ -15,16 +14,16 @@ const Navbar = () => (
   >
     <div className="absolute w-[30%] inset-0 gradient-01" />
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-      <Link href="/">
         <img
           src="/logo.png"
           alt="logo"
           className="w-[24px] h-[24px] object-contain"
         />
+      <Link href="/landing">
+        <h2 className="font-bold text-[24px] leading-[30px] text-white">
+          ÖTZZI
+        </h2>
       </Link>
-      <h2 className="font-bold text-[24px] leading-[30px] text-white">
-        ÖTZZI
-      </h2>
       <img
         src="/menu.svg"
         alt="menu"
