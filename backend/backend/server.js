@@ -41,7 +41,7 @@ app.use(
   cors({
     origin: ["http:localhost:3000", "https://otzzi.onrender.com"]
   })
-  );
+);
 
 // Rutas
 app.get('/', (req, res) => {
