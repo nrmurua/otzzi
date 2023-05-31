@@ -15,7 +15,7 @@ export const api = createApi({
         }),
         login: build.query({
             query: ({email, password}) => ({
-                url: "/authRoutes/register",
+                url: "/authRoutes/login",
                 method: "GET",
                 params: {email, password},
             }),

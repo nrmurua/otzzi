@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     <>
     <div className="bg-[#0f1015] overflow-hidden">  
       <Navbar />
-      {isMounted && <Component {...pageProps} />}
+      {<Component {...pageProps} />}
       <Footer />
     </div>
     </>
