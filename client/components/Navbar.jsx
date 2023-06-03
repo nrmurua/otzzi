@@ -5,6 +5,7 @@ import styles from '../styles';
 import { navVariants } from '../utils/motion';
 import Link from 'next/link'
 
+
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
@@ -22,6 +23,16 @@ const Navbar = () => (
       <Link href="/">
         <h2 className="font-bold text-[24px] leading-[30px] text-white">
           ÖTZZI
+        </h2>
+      </Link>
+      <Link href="/signup">
+        <h2 className="font-bold text-[24px] leading-[30px] text-white">
+          Registro
+        </h2>
+      </Link>
+      <Link href="/login">
+        <h2 className="font-bold text-[24px] leading-[30px] text-white">
+          Login
         </h2>
       </Link>
       <img
