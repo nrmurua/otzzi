@@ -37,6 +37,9 @@ Si necesitan comentar mas weas de instrucciones, lo hacen por aqui en el Readme.
 
 ### Dependencias
 
+<details><summary>Ver</summary>
+<p>
+
 git bash: https://git-scm.com/downloads
 
 MongoDB: https://www.mongodb.com/try/download/community (IMPORTANTE: agregar la carpeta bin a papth para poder ejecutar mongod en npm)
@@ -48,11 +51,14 @@ React: https://react.dev/learn/add-react-to-an-existing-project (se requiere npm
 Node: https://nodejs.org/en/download (incluye npm, pero si no, descargar a parte)
 
 npm: https://www.npmjs.com/package/download
+
+</p>
+</details>
 - - -
 
 ### Dependencias y dep. de desarrollo 
 
-<details><summary>Sample text</summary>
+<details><summary>Ver dependencias npm</summary>
 <p>
 
 REACT: npm install react react-dom
