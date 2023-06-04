@@ -50,7 +50,10 @@ Node: https://nodejs.org/en/download (incluye npm, pero si no, descargar a parte
 npm: https://www.npmjs.com/package/download
 - - -
 
-### Dependencias de desarrollo 
+### Dependencias y dep. de desarrollo 
+
+<details><summary>Sample text</summary>
+<p>
 
 REACT: npm install react react-dom
 
@@ -60,6 +63,13 @@ Webpack: npm i webpack -D
 
 Webpack-cli: npm i webpack-cli -D
 
+npm i express mongoose cors dotenv
+
+npm i nodemon -D
+
+</p>
+</details>
+
 - - -
 
 ## Sobre el proyecto
@@ -67,13 +77,6 @@ Webpack-cli: npm i webpack-cli -D
 El proyecto trata sobre una tatuadora local llamada Ozzi.
 Esta, desea tener una aplicacion web la cual permita fascilitar el agendado de horas por parte de los clinetes, y entregar un tipo de curriculum por tatuador de trabajos previos realizados, para que el cliente pueda evaluar cual satisface mejor sus nececidades.
 Tambien tiene la facultad de permitir cotizar los precios de los tatuajes.
-
-<details><summary>Sample text</summary>
-<p>
-sample text
-
-</p>
-</details>
 
 - - -
 
@@ -86,7 +89,6 @@ sample text
 
 <!-- > ![Modelo Relacional](https://github.com/GavenJr/proyectoIngSoftware/blob/master/proyecto_ubb/src/main/resources/model/Relational_Schema.png?raw=true) -->
 <!-- <img src="https://github.com/GavenJr/proyectoIngSoftware/blob/master/proyecto_ubb/src/main/resources/model/Relational_Schema.png" width="512x512"> -->
-
 
 <!-- WEAS DEL ARCHIVO QUE COPIAMOS/REFERENCIAMOS
 
@@ -124,6 +126,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 
 -->
