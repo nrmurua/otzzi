@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-    <div className="bg-[#0f1015] overflow-hidden">  
+    <div className="bg-[#0f1015] overflow-hidden wrapper">  
       <Navbar />
       {<Component {...pageProps} />}
       <Footer />

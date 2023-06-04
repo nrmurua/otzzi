@@ -4,6 +4,5 @@
   "/_document": "pages/_document.js",
   "/login": "pages/login.js",
   "/": "pages/index.js",
-  "/tatuador": "pages/tatuador.js",
-  "/signup": "pages/signup.js"
+  "/tatuador": "pages/tatuador.js"
 }

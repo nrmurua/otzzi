@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <title>Otzzi Tattoo Studio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/otzzi/logo.png" />
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />

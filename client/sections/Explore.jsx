@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { exploreCard, TypingText, TitleText, ExploreCard} from '../components';
+import { Element, animateScroll as scroll } from 'react-scroll';
+import { useEffect } from 'react';
+
 
 import { exploreArtists } from "../constants";
 

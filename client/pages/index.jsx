@@ -2,14 +2,17 @@ import { Navbar, Footer } from '../components';
 import { About, Explore, Feedback, Access, Hero, Insights, WhatsNew, World } from '../sections';
 
 
+
 const HomePage = () => {
   return (
     <>
       <Hero />
       <div className="relative">
         <About />
-        <div className="gradient-03 z-0" />
-        <Explore />
+        <div className="gradient-03 z-0"/>
+        <div id="portafolios">
+        <Explore/>
+        </div>
       </div>
       <div className="relative">
         <Access />

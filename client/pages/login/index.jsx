@@ -1,13 +1,15 @@
-import { motion } from "framer-motion";
-
-import { slideIn, staggerContainer, staggetContainer, textVariant } from '../../utils/motion';
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./styles.module.css";
 import { login, useLoginQuery } from "../../api/api";
+import api from "../../api/api";
+
+import axios from 'axios';
 
 const LogInPage = () => {
     
+	let enteredPassword = "";
+
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState("");
@@ -17,30 +19,27 @@ const LogInPage = () => {
 	};
 
 	const handleChangePassword = ({ currentTarget: input }) => {
-		setPassword(input.value);
+		enteredPassword = input.value;
+		const passwordLength = enteredPassword.length;
+		const maskedPassword = '.'.repeat(passwordLength);
+		setPassword(maskedPassword);
 	};
 
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			useLoginQuery({
-				email,
-				password,
-			});
+			const resp = await api.post('/login');
+			console.log(resp.data);
+			// Perform any necessary actions after successful registration
 		} catch (error) {
-			if (
-				error.response &&
-				error.response.status >= 400 &&
-				error.response.status <= 500
-			) {
-				setError(error.response.data.message);
-			}
+			console.error('Login failed:', error);
+			// Handle registration failure, show error messages, etc.
 		}
 	};
 
     return(
-      <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+      <section className={`${styles.yPaddings} sm:pl-16 pl-6 content`}>
 			<div className={`${styles.innerWidth} mx-auto flex flex-col`}>
 				<div className="flex justify-center items-center flex-col relative z-10">
 					<form className={styles.form_container} onSubmit={handleSubmit}>

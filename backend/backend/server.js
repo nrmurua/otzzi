@@ -37,11 +37,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('tiny'));
-app.use(
-  cors({
-    origin: ["http:localhost:3000", "https://otzzi.onrender.com"]
-  })
-);
+app.use(cors());
 
 // Rutas
 app.get('/', (req, res) => {
