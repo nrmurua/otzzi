@@ -62,6 +62,7 @@ npm: https://www.npmjs.com/package/download
 <details><summary>Ver dependencias npm</summary>
 <p>
 
+```bash
 REACT: npm install react react-dom
 
 Mongod: npm install mongodb --save
@@ -73,6 +74,7 @@ Webpack-cli: npm i webpack-cli -D
 npm i express mongoose cors dotenv
 
 npm i nodemon -D
+```
 
 </p>
 </details>
