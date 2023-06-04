@@ -1,0 +1,55 @@
+{
+  "name": "gps_otzzi",
+  "version": "1.0.0",
+  "description": "Proyecto de Gestion de Proyectos de Software sobre tatuadora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "server": "nodemon server",
+
+    "start": "node src/index.js",
+
+    "dev": "nodemon src/index.js",
+
+    "webpack": "webpack --mode development"
+  },
+  "//": [
+    "Esto es un comentario multi-linea!",
+    "La seccion de scripts es para resumir comandos a una variable para ejecutarlas con npm (script)",
+    "En dependencies estan las dependencias que necesita la aplicacion para funcionar, con npm install (dependencia)",
+    "algunas usan -d al final del install para indicar que solo son modulos de desarrollo, como nodemon por ej"
+  ],
+  "keywords": [],
+  "author": "nmurua (https://github.com/nrmurua/)",
+  "contributors": [
+    "Bryan Jara Castillo (https://github.com/BryanJaraCastillo)",
+    "Cristian valenzuela (https://github.com/cristian23tbtb)",
+    "GavenJr (https://github.com/GavenJr)"
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/nrmurua/otzzi",
+    "directory": "https://github.com/nrmurua/otzzi/blob/main/backend/package.json"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.4.0",
+    "mongoose": "^7.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0"
+  }
+}
