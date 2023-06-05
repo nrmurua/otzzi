@@ -37,7 +37,7 @@ Si necesitan comentar mas weas de instrucciones, lo hacen por aqui en el Readme.
 Recuerden mantener una estructura de proyecto organizada! Eso ayuda a la legibilidad e incrementos del proyecto. Usen esta de referencia
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/nrmurua/otzzi/blob/g_source/ideal.jpg">
+    <img width="30%" src="https://github.com/nrmurua/otzzi/blob/g_source/ideal.jpg">
     <img width="50%" src="https://github.com/nrmurua/otzzi/blob/g_source/model.png">
 </p>
 
