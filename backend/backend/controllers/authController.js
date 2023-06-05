@@ -34,20 +34,20 @@ const register = async (req, res) => {
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
-
     const user = await User.findOne({ email });
 
     if (!user) {
-      return res.status(404).json({ message: 'Invalid credentials!' });
+      return res.status(401).json({ message: 'Invalid credentials!' });
     }
 
     const isPasswordMatch = await bcrypt.compare(password, user.password);
 
     if (!isPasswordMatch) {
-      return res.status(404).json({ message: 'Invalid credentials!' });
+      return res.status(401).json({ message: 'Invalid credentials!' });
     }
 
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    const role = user.isCustomer? "customer": "artist";
+    const token = jwt.sign({ userId: user._id, role }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
     res.status(200).json({ message: 'Login successful!', token });
   } catch (error) {

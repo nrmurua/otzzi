@@ -7,7 +7,6 @@ import styles from "./styles.module.css";
 import { login, useLoginQuery } from "../../api/api";
 
 const SignInPage = () => {
-  
   const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const [email, setEmail] = useState("");
@@ -37,7 +36,7 @@ const SignInPage = () => {
 	};
 
 	const handleChangeAddress = ({ currentTarget: input }) => {
-		setaddress(input.value);
+		setAddress(input.value);
 	};
 
 
@@ -94,7 +93,7 @@ const SignInPage = () => {
             className={styles.input}
           />
           <input
-            type="String"
+            type="password"
             placeholder="Contraseña"
             name="password"
             onChange={handleChangePassword}

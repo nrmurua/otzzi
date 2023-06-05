@@ -1,37 +1,41 @@
 import { useState } from "react";
+import { NextResponse } from 'next/server';
 import Link from "next/link";
 import styles from "./styles.module.css";
-import { login, useLoginQuery } from "../../api/api";
 import api from "../../api/api";
-
-import axios from 'axios';
+import { middlewareLogin } from "../middleware.js"
+import jwt_decode from 'jwt-decode';
+import Cookies from 'cookies';
+import { useHistory } from 'react-router-dom';
 
 const LogInPage = () => {
-    
-	let enteredPassword = "";
-
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState("");
-	
+
 	const handleChangeEmail = ({ currentTarget: input }) => {
 		setEmail(input.value);
 	};
 
 	const handleChangePassword = ({ currentTarget: input }) => {
-		enteredPassword = input.value;
-		const passwordLength = enteredPassword.length;
-		const maskedPassword = '.'.repeat(passwordLength);
-		setPassword(maskedPassword);
+		setPassword(input.value);
 	};
-
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
+		const params = {email, password}
 		try {
-			const resp = await api.post('/login');
-			console.log(resp.data);
-			// Perform any necessary actions after successful registration
+			const resp = await api.post('/login', params);
+			const token = resp.data.token;
+			const decodedToken = jwt_decode(token);
+
+			if (decodedToken.role === 'customer') {
+				window.location.href = '/';
+			} else if (decodedToken.role === 'artist') {
+				window.location.href = '/signup';
+			}
+			
 		} catch (error) {
 			console.error('Login failed:', error);
 			// Handle registration failure, show error messages, etc.
@@ -50,12 +54,12 @@ const LogInPage = () => {
 							placeholder="Email"
 							name="email"
 							onChange={handleChangeEmail}
-							value={email}
+								// Aquí podrías redirigir al usuario a la página de inicio de artista			value={email}
 							required
 							className={styles.input}
 						/>
 						<input
-							type="String"
+							type="password"
 							placeholder="Contraseña"
 							name="password"
 							onChange={handleChangePassword}
