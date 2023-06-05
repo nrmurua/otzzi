@@ -2,18 +2,25 @@
 
 const mongoose = require('mongoose');
 
+console.log(process.env.MONGODB_URI);
 // Aqui van las credenciales de la DB, en mi caso, estoy usando ATLAS
-const uri = "mongodb+srv://admin:Grupo12GPS_UBB@gps-grupo12.iva2kht.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI 
+          ? process.env.MONGODB_URI 
+          : 'mongodb://localhost/otzzi';
+//const uri = "mongodb://localhost/otzzi";
 
-//const uri = "mongodb://localhost/tareas-mern";
+// Necesitamos de 'npm install mongodb --save', y ejecutar 'mongod' para correr: mongod --dbpath "D:\Informatica PD\MongoDB\data\db"
 
-// Necesitamos de 'npm install mongodb --save', y ejecutar 'mongod' para correr
-// mongod --dbpath "D:\Informatica PD\MongoDB\data\db"
-
+//  Coneccion a la DB https://mongoosejs.com/docs/connections.html
 mongoose
   .connect( uri, { useNewUrlParser: true, useUnifiedTopology: true } )
   .then( db => console.log( "La BD esta conectada!" ) )
   .catch( err => console.error( err ) );
 
+const connection = mongoose.connection;
+
+connection.once('open', () => {
+    console.log('BD conectada');
+});
 
 module.exports = mongoose;                              // Necesitamos exportar el archivo pal server
