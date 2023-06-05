@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const tattoController = require('../controllers/tattoController');
+const tattoController = require('../../controllers/tattoController');
 
 // Rutas para tattoas
 router.post('/tattos', tattoController.createTattoo);

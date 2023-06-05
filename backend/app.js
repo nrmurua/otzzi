@@ -10,10 +10,6 @@ const bookingRoute = require('./Router/bookingRouter');
 const userRoute = require('./Router/userRoute');
 const authRoutes = require('./Router/authRoutes');
 
-
-//  Importamos el framework de Express y lo guardamos en un objeto
-const express = require('express');
-const cors = require('cors');
 const app = express();
 
 module.exports = app;
