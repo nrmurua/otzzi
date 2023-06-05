@@ -1,3 +1,15 @@
+require('dotenv').config();
+const express = require('express');
+const morgan = require('morgan');
+const cors = require('cors');
+const artistRouter = require('./Router/artistRouter');
+const appoinmentRoute = require('./Router/appointmentRoute');
+const customerRoute = require('./Router/customerRoute');
+const tattoRoute = require('./Router/tattoRouter');
+const bookingRoute = require('./Router/bookingRouter');
+const userRoute = require('./Router/userRoute');
+const authRoutes = require('./Router/authRoutes');
+
 
 //  Importamos el framework de Express y lo guardamos en un objeto
 const express = require('express');
@@ -42,3 +54,8 @@ app.use('/api', userRoute);
 app.use('/api', authRoutes);
 
 
+// Iniciar servidor
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en el puerto ${PORT}`);
+  });
+  

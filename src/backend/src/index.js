@@ -1,5 +1,5 @@
 require ('dotenv').config();    //  Importa las credenciales de la BD
-
+require('dotenv').config();
 const app = require('./app');
 require('./database');
 
