@@ -26,9 +26,8 @@ app.get('/', (req, res) => {
   res.send('Bienvenido a la API del centro de tatuajes');
 });
 
-app.get('/test', (req, res) =>{
-    res.send('TEst');
-})
+app.use('/api/usuarios', require('./Router/userRoute.js') );
+app.use('/api/usuarios', require('./Router/customerRoute.js') );
 
 /** R u t a s _ D e _ L a _ A p i
  * 
