@@ -37,14 +37,8 @@ Si necesitan comentar mas weas de instrucciones, lo hacen por aqui en el Readme.
 Recuerden mantener una estructura de proyecto organizada! Eso ayuda a la legibilidad e incrementos del proyecto. Usen esta de referencia
 
 <p align="center" width="100%">
-    <img width="10%" src="https://brandslogos.com/wp-content/uploads/images/large/java-logo-1.png">
-    <img width="10%" src="https://e4developer.com/wp-content/uploads/2018/01/spring-boot.png">
-    <img width="10%" src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png">
-    <img width="10%" src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-how-setup-mysql-workbench-database-for-wordpress-20.png">
-    <img width="10%" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Postman_%28software%29.png">
-    <img width="10%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/PhpMyAdmin_logo_2010_hidef.svg/1200px-PhpMyAdmin_logo_2010_hidef.svg.png">
-    <img width="10%" src="https://junit.org/junit5/assets/img/junit5-logo.png">
-    <img width="10%" src="https://static.javatpoint.com/tutorial/mockito/images/mockito.png">
+    <img width="50%" src="https://github.com/nrmurua/otzzi/blob/g_source/ideal.jpg">
+    <img width="50%" src="https://github.com/nrmurua/otzzi/blob/g_source/model.png">
 </p>
 
 ### Dependencias
