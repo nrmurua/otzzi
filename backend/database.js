@@ -3,9 +3,7 @@ const mongoose = require('mongoose');
 
 console.log(process.env.MONGODB_URI);
 
-const uri = process.env.MONGODB_URI 
-          ? process.env.MONGODB_URI 
-          : 'mongodb://localhost/otzzi';
+const uri = process.env.MONGODB_URI || 'mongodb://localhost/otzzi';
 //const uri = "mongodb://localhost/otzzi";
 
 //  Coneccion a la DB https://mongoosejs.com/docs/connections.html

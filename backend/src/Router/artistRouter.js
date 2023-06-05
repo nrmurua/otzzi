@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const artistController = require('../../controllers/artistController');
+const artistController = require('../controllers/artistController');
 
 // Rutas para artistas
 router.post('/artists', artistController.createArtist);
