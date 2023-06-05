@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server",
     "start": "node src/backend/src/index.js",
-    "dev": "nodemon src/backend/src/index.js",
+    "dev": "nodemon src/backend/src/index.js --ignore client",
     "webpack": "webpack --mode development"
   },
   "//": [
