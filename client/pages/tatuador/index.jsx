@@ -1,8 +1,9 @@
+import ArtistProfile from "../../components/ArtistProfile";
 
 const TatuadorPage = () => {
   return(
     <>
-        <h1>HOLAAAAAAAAA</h1>
+        <ArtistProfile/>
     </>
   );  
 };
