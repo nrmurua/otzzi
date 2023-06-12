@@ -19,9 +19,32 @@ artifact id: proyecto_ubb
 
 Esta aplicacion hace uso del Stack MERN (MongoDB, ExpressJS, ReactJS, NodeJS), y los enlaces a el software necesario para correr esta app se encuentran a continuacion
 
-## Dependencias del proyecto
+## Para comenzar:
 
-### Dependencias principales
+Primero que nada, corran el server de desarrollo:
+
+```bash
+npm run dev
+# o alternativamente
+yarn dev
+```
+
+Abran [http://localhost:3000](http://localhost:3000) con sus buscadores para ver los resultados, o alternativamente
+abran la URL con las credenciales que hayan vinculado en su archivo de la DB.
+
+Si necesitan comentar mas weas de instrucciones, lo hacen por aqui en el Readme.md
+
+Recuerden mantener una estructura de proyecto organizada! Eso ayuda a la legibilidad e incrementos del proyecto. Usen esta de referencia
+
+<p align="center" width="100%">
+    <img width="30%" src="https://github.com/nrmurua/otzzi/blob/g_source/ideal.jpg">
+    <img width="50%" src="https://github.com/nrmurua/otzzi/blob/g_source/model.png">
+</p>
+
+### Dependencias
+
+<details><summary>Ver</summary>
+<p>
 
 git bash: https://git-scm.com/downloads
 
@@ -34,10 +57,18 @@ React: https://react.dev/learn/add-react-to-an-existing-project (se requiere npm
 Node: https://nodejs.org/en/download (incluye npm, pero si no, descargar a parte)
 
 npm: https://www.npmjs.com/package/download
+
+</p>
+</details>
+
 - - -
 
-### Dependencias de desarrollo 
+### Dependencias y dep. de desarrollo 
 
+<details><summary>Ver dependencias npm</summary>
+<p>
+
+```bash
 REACT: npm install react react-dom
 
 Mongod: npm install mongodb --save
@@ -46,6 +77,14 @@ Webpack: npm i webpack -D
 
 Webpack-cli: npm i webpack-cli -D
 
+npm i express mongoose cors dotenv
+
+npm i nodemon -D
+```
+
+</p>
+</details>
+
 - - -
 
 ## Sobre el proyecto
@@ -53,13 +92,6 @@ Webpack-cli: npm i webpack-cli -D
 El proyecto trata sobre una tatuadora local llamada Ozzi.
 Esta, desea tener una aplicacion web la cual permita fascilitar el agendado de horas por parte de los clinetes, y entregar un tipo de curriculum por tatuador de trabajos previos realizados, para que el cliente pueda evaluar cual satisface mejor sus nececidades.
 Tambien tiene la facultad de permitir cotizar los precios de los tatuajes.
-
-<details><summary>COMO IMPLEMENTAR</summary>
-<p>
-sample text
-
-</p>
-</details>
 
 - - -
 
@@ -72,3 +104,7 @@ sample text
 
 <!-- > ![Modelo Relacional](https://github.com/GavenJr/proyectoIngSoftware/blob/master/proyecto_ubb/src/main/resources/model/Relational_Schema.png?raw=true) -->
 <!-- <img src="https://github.com/GavenJr/proyectoIngSoftware/blob/master/proyecto_ubb/src/main/resources/model/Relational_Schema.png" width="512x512"> -->
+
+<!-- WEAS DEL ARCHIVO QUE COPIAMOS/REFERENCIAMOS
+
+-->
